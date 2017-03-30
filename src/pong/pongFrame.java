@@ -1,10 +1,10 @@
+/*
+ Created a new class for this and renamed it to something that makes more sense
+ */
 package pong;
 
-import java.awt.Color;
 import javax.swing.JFrame;
-
-
-public class pong extends JFrame
+public class pongFrame extends JFrame
 {
     
     JFrame pong = new JFrame();
@@ -12,7 +12,7 @@ public class pong extends JFrame
     public static int WIDTH = 800, HEIGHT = 800;
    
   
-    public pong ()
+    public pongFrame ()
     {
       pong.setTitle("Sooper Pung");
       pong.setSize(WIDTH, HEIGHT);
@@ -27,16 +27,6 @@ public class pong extends JFrame
       
       
       pack();
-    }
-        
-    
-    
-    
- public static void main(String[] args)
-    { 
-        new pong();
-    }
-            
+    }        
               
 }
-
