@@ -7,26 +7,32 @@ import javax.swing.JFrame;
 
 public class pong extends JFrame
 {
-    JFrame pong = new JFrame();
-    final static int WIDTH = 800, HEIGHT = 800;
     
-    public pong() 
+    public pong (int _width, int _height) 
     {
-       pong.setVisible(true);
-       pong.setResizable(false);
-       pong.setLocationRelativeTo(null);
-       pong.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        //the class pong is already a jframe, so we don't need to create a 
+        //jframe inside of it. I set it up so that it takes in two arguments
+        //when you create it: width and height
+       setVisible(true);
+       setResizable(false);
+       setLocationRelativeTo(null);
+       setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
        
      
        
-       pong.setSize(WIDTH,HEIGHT);
-       pong.setBackground(Color.BLACK);     
+       setSize(_width ,_height);
+       setBackground(Color.BLACK);     
     }
  
     
     
  public static void main(String[] args)
     { 
+        //This is where the application actually starts running
+        
+        //and here we create our pong object, which is a jframe. we give it the
+        //width and height arguments.
+        pong pongFrame = new pong(800,800);
     }
             
               
