@@ -5,25 +5,8 @@ import javax.swing.JFrame;
 
 
 
-public class pong extends JFrame
+public class pong
 {
-    
-    public pong (int _width, int _height) 
-    {
-        //the class pong is already a jframe, so we don't need to create a 
-        //jframe inside of it. I set it up so that it takes in two arguments
-        //when you create it: width and height
-       setVisible(true);
-       setResizable(false);
-       setLocationRelativeTo(null);
-       setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-       
-     
-       
-       setSize(_width ,_height);
-       setBackground(Color.BLACK);     
-    }
- 
     
     
  public static void main(String[] args)
@@ -35,7 +18,15 @@ public class pong extends JFrame
         
         int WIDTH = 800;
         int HEIGHT = 800;
-        pong pongFrame = new pong(WIDTH,HEIGHT);
+        JFrame pongFrame = new JFrame();
+        
+       pongFrame.setVisible(true);
+       pongFrame.setResizable(false);
+       pongFrame.setLocationRelativeTo(null);
+       pongFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+      
+       pongFrame.setSize(WIDTH, HEIGHT);
+       pongFrame.setBackground(Color.BLACK);
     }
             
               
