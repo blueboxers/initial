@@ -15,6 +15,7 @@ public class pong extends JFrame
        pong.setSize(WIDTH,HEIGHT);
        pong.setResizable(false);
 
+       //can you see this?
        
                 
         
