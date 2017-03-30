@@ -32,7 +32,10 @@ public class pong extends JFrame
         
         //and here we create our pong object, which is a jframe. we give it the
         //width and height arguments.
-        pong pongFrame = new pong(800,800);
+        
+        int WIDTH = 800;
+        int HEIGHT = 800;
+        pong pongFrame = new pong(WIDTH,HEIGHT);
     }
             
               
